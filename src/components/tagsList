@@ -1,0 +1,30 @@
+export const tagsList = [
+    { 
+        name: "Entrepreneurship", 
+        color: "#DEDAF4", 
+        textColor: "#5222ab"
+    }, 
+    {
+        name: "Code", 
+        color: "#a8f0de", 
+        textColor: "#0f7a21"
+    }, 
+    {
+        name: "UI/UX", 
+        color: "#FFD6A5", 
+        textColor: "#ba6600"
+    }, 
+    {
+        name: "Business", 
+        color: "#FFADAD", 
+        textColor: "#9e1e1e"
+    }, 
+    {
+        name: "Ongoing", 
+        color: "#9ADCFF", 
+        textColor: "#13549e"
+    }
+    
+]
+
+export default tagsList; 

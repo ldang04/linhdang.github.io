@@ -1,0 +1,572 @@
+/* Color guide: 
+- Red: #FFADAD
+- Orange: #FFD6A5
+- Yellow: #FDFFB6
+- Green: #8DDFCB
+- Blue: 9ADCFF
+- Purple: #DEDAF4  
+---
+Darker versions: 
+- Red: #9e1e1e
+- Orange: #ba6600
+- Yellow: #ffe02e
+- Green: #0f7a21
+- Blue: #13549e
+- Purple: #5222ab
+*/
+
+
+/* small window css  */
+.small-window {
+    border: 2px solid black;
+    width: 40vw; 
+    height: 40vh;
+}
+
+.window-header {
+    display: flex;
+    background: #EAEAEA;
+    border-bottom: 2px solid black;
+    position: absolute;
+    width: inherit;
+    margin: 0;
+}
+
+.ld-link {
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 1em;
+}
+
+.header-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 0 0 0.5em;
+}
+
+.symbols { 
+    /* right align  */
+    display: flex;
+    align-items: center;
+    margin: 0 1em 0 auto; 
+}
+
+/* general window configurations for containers */
+.container-window {
+    display: flex;
+    padding: 5em 2em 2em 0;    
+}
+
+/* large window css  */
+.large-window {
+    border: 2px solid black;
+    background: white;
+    width: 85vw; 
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+/* container with center contents  */
+.container-center { 
+    height: 33.5vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* About page css ============================================= */
+.about {
+    overflow: hidden;
+}
+
+.unstyled-a {
+    color: black; 
+    text-decoration: none;
+}
+
+.red-underline {
+    border-bottom: 3px solid #FFADAD;
+}
+
+.red-underline:hover {
+    background: #FFADAD;
+}
+
+.orange-underline {
+    border-bottom: 3px solid #FFD6A5;
+}
+
+.orange-underline:hover {
+    background: #FFD6A5;
+}
+
+.yellow-underline {
+    border-bottom: 3px solid #FDFFB6;
+}
+
+.yellow-underline:hover {
+    background: #FDFFB6;
+}
+
+.green-underline {
+    border-bottom: 3px solid #8DDFCB;
+}
+
+.green-underline:hover {
+    background: #8DDFCB;
+}
+
+.blue-underline {
+    border-bottom: 3px solid #9ADCFF;
+}
+
+.blue-underline:hover {
+    background: #9ADCFF;
+}
+
+.purple-underline {
+    border-bottom: 3px solid #DEDAF4;
+}
+
+.purple-underline:hover {
+    background: #DEDAF4;
+}
+/* Project page css ============================================================ */
+.projects-main-container {
+    padding: 3.5em 0 0 0; 
+}
+
+.filter-bar {
+    background: white;
+    padding: 1em 1em 1em 1em;
+    position: sticky;
+    top: 3em;
+}
+
+.filter-btn {
+    font-family: "Inter"; 
+    font-size: 1.2em; 
+    font-weight: 500; 
+    background: none;
+    border: 2px solid black; 
+    padding: 0.5em;
+    margin: 0 0.75em 0 0; 
+}
+
+.filter-btn:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-menu {
+    display: inline-block;
+}
+
+.check-container {
+    font-family: "Inter"; 
+    font-weight: 300;
+    display: inline-block;
+    margin: 0 0.25em 0 0; 
+}
+
+.project-a {
+    text-decoration: none; 
+    color: black; 
+    display: inline-block;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+.project-box h1 {
+    font-family:"Inter"; 
+    font-weight: 500;
+    font-size: 1.25em;
+    margin: 0 0 0.5em 0;
+}
+
+.project-box p {
+    font-family:"Inter"; 
+    font-weight: 300;
+    font-size: 1em;
+    display: inline-block;
+    margin: 0;
+}
+
+
+.project-box h3 {
+    border: 1px solid black; 
+    padding: 0.3em;
+    width: wrap;
+    margin: 0 0.3em 0.3em 0 ;
+    display: inline-block;
+    font-family:"Inter"; 
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* Hover css  */
+.project-a:hover {
+    background: black;
+}
+
+.project-a:hover h1 {
+    color: white;
+}
+
+.project-a:hover p {
+    color: white;
+}
+/* Other page css ============================================================ */
+.other-window {
+    padding: 0 1em 0 1em;
+}
+.other-window p {
+    font-family: "Inter"; 
+    font-weight: 300; 
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+
+.cursor ::after {
+    content: "";
+    width: 7px;
+    height: 1em;
+    background: #9ADCFF;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+.cursor p {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+/* Media queries ================================================= */
+/* Mobile devices */
+@media only screen and (max-width: 750px) {
+    body {
+        background: red;
+    }
+
+    .arrow-text {
+        display: none;
+    }
+
+    .window-header h2 {
+        font-weight: 600;
+        font-family: "inconsolata";
+        font-size: 1.2em;
+        margin: 0.3em;
+    }
+
+    .header-links {
+        font-weight: 600;
+        font-family: "inconsolata";
+        font-size: 1.2rem;
+        margin: 0.3em;
+    }
+
+    .window-header img {
+        display: none;
+    }
+
+    /* About page ================================= */
+    .about-window {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        grid-template-rows: unset;
+        overflow: scroll; 
+        justify-content: center;
+        max-height: 95vh;
+    }
+
+    .about-left {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    
+    .headshot {
+        border: 2px solid black;
+    }
+    
+    .center-img {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 1em 0;
+    }
+    
+    .about-left img {
+        margin-top: 3em;
+        width: 50%;
+    }
+    
+    .about-left p {
+        font-family: "Inter"; 
+        font-weight: 300; 
+        font-size: 1em;
+        margin: 0 auto;
+        padding: 0.70em;
+        text-decoration: underline;
+    }
+    
+    .link-container {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .link-container a {
+        background: blue;
+        display: flex;
+        height: 0;
+    }
+
+    .link-container img {
+        display: block;
+    }
+
+    .about-right {
+        padding: 0 1em 1em 1em;
+    }
+
+    .about-right p {
+        font-family: "Inter"; 
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+    /* Projects page  */
+    .projects-container {
+        display: grid; 
+        grid-template-columns: 100%;
+        justify-content: center;
+        grid-gap: 1em;
+        padding: 0 1.75em 1em 1.75em;
+    }
+}
+
+/* Medium devices (landscape tablets, 750px and up) */
+@media only screen and (min-width: 750px) {
+    body {
+        background: orange;
+    }
+
+    /* Header CSS ================================================= */
+    .window-header h2 {
+        font-weight: 600;
+        font-family: "inconsolata";
+        font-size: 1.3em;
+        margin: 0.3em;
+    }
+    
+    .header-links {
+        font-weight: 600;
+        font-family: "inconsolata";
+        font-size: 1.3rem;
+        margin: 0.3em;
+    }
+    
+    .header-links a {
+        color: black;
+        text-decoration: none;
+        margin: 0 0 0 0.5em;
+    }
+    
+    .symbols { 
+        /* right align  */
+        display: flex;
+        align-items: center;
+        margin: 0 1em 0 auto; 
+    }
+    
+    .window-header img {
+        height: 2em;
+        width: 2em;
+        margin-left: 0.5em;
+    }
+
+    .window-header img {
+        height: 1.5em;
+        width: 1.5em;
+        margin-left: 0.5em;
+    }
+    
+    /* About page css ============================================= */
+    .about-window {
+        display: flex;
+        padding: 5em 2em 2em 0;    
+    }
+
+    .about-left {
+        width: 40%; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    
+    .headshot {
+        border: 2px solid black;
+    }
+    
+    .center-img {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 1em 0;
+    }
+    
+    .about-left img {
+        width: 70%;
+    }
+    
+    .about-left p {
+        font-family: "Inter"; 
+        font-weight: 300; 
+        font-size: 1em;
+        margin: 0 auto;
+        padding: 0.70em;
+        text-decoration: underline;
+    }
+    
+    .link-container {
+        margin: 0 auto;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 33% 33%;
+        grid-gap: 0px;
+        justify-content: center;
+    }
+    
+    .link-container img {
+        /* background: blue; */
+    }
+    .about-right {
+        width: 60%; 
+    }  
+    
+    .about-right p {
+        font-family: "Inter"; 
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+    /* Projects page  */
+    .projects-container {
+        display: grid; 
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        grid-gap: 1em;
+        padding: 0 1.75em 1em 1.75em;
+    }
+
+}
+
+/* DEFAULT -- Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADZJREFUKFNjZMADZt35/58RlzxIMk2FkRGrApgkSDOGAmRJDAXokigKsEnCFeCSBCvAJwlSAAD24h99tYDu9gAAAABJRU5ErkJggg==)
+        repeat;
+    }
+
+    /* Header CSS =========================== */
+    .window-header h2 {
+        font-weight: 600;
+        font-family: "inconsolata";
+        font-size: 1.75rem;
+        margin: 0.3em;
+    }
+    
+    .ld-link {
+        text-decoration: none;
+        color: black;
+        margin: 0 0 0 1em;
+    }
+    
+    .header-links {
+        font-weight: 600;
+        font-family: "inconsolata";
+        font-size: 1.75rem;
+        margin: 0.3em;
+    }
+
+    .window-header img {
+        height: 2em;
+        width: 2em;
+        margin-left: 0.5em;
+    }
+
+    /* About page ================================= */
+    .about-window {
+        display: flex;
+        padding: 5em 2em 2em 0;    
+    }
+
+    .about-left {
+        width: 40%; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    
+    .headshot {
+        border: 2px solid black;
+    }
+    
+    .center-img {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 1em 0;
+    }
+    
+    .about-left img {
+        width: 70%;
+    }
+    
+    .about-left p {
+        font-family: "Inter"; 
+        font-weight: 300; 
+        font-size: 1.2em;
+        margin: 0 auto;
+        padding: 0.70em;
+        text-decoration: underline;
+    }
+    
+    .link-container {
+        margin: 0 auto;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 33% 33%;
+        grid-gap: 0px;
+        justify-content: center;
+    }
+    
+    .link-container img {
+        /* background: blue; */
+    }
+    .about-right {
+        width: 60%; 
+    }  
+    
+    .about-right p {
+        font-family: "Inter"; 
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+
+    /* Projects page  */
+    .projects-container {
+        display: grid; 
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        grid-gap: 1em;
+        padding: 0 1.75em 1em 1.75em;
+    }
+}
